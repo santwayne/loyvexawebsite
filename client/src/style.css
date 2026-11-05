@@ -89,3 +89,8 @@ a.card,a.industry{display:block}
  .timeline-item{flex-direction:column;gap:12px;padding:24px}
  .module-list{gap:60px}
 }
+
+/* full 16:9 frame for the sound video so nothing is cropped */
+.solution-art{min-height:0;aspect-ratio:16/9;height:auto}
+.solution-art .sound-video video,.solution-art video{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:900px){.solution-art,.solution-art video{min-height:0;height:auto}}
